@@ -9,7 +9,7 @@ if (typeof emailFilename === "undefined") {
   throw new Error(`The first argument must be the email file to render!`);
 }
 
-const emailPath = join(process.cwd(), `emails/${emailFilename}.tsx`);
+const emailPath = `./emails/${emailFilename}.tsx`;
 
 if (!existsSync(emailPath)) {
   throw new Error(`No email could be found at the path "${emailPath}"`);
